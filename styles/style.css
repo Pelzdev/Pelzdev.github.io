@@ -9,11 +9,17 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
 	.header-center button {
 		width: 80px !important;
 		padding: 3px 0 !important;
 		font-size: 0.8em !important;
+	}
+	.header-left {
+		font-size: 1em !important;
+	}
+	.header-right {
+		font-size: 0.85em !important;
 	}
 	.article1-text, .article2-text {
 		padding: 20% 20% 0 10%;
@@ -27,7 +33,7 @@ body {
 	}
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
 	.article1-text, .article2-text {
 		padding: 20% 20% 0 10%;
 	}
@@ -35,12 +41,12 @@ body {
 		font-size: 2.5em !important;
 	}
 	.article-p {
-		font-size: 1.25em !important;
-		line-height: 1.25em;
+		font-size: 1.5em !important;
+		line-height: 1.5em !important;
 	}
 	.article-a {
 		font-size: 1.25em !important;
-		line-height: 1.25em;
+		line-height: 1.25em !important;
 	}
 }
 
@@ -96,7 +102,7 @@ body {
 }
 .header-left {
 	margin: 2vw 0 0 2vw;
-	font-size: 1.5em;
+	font-size: 2em;
 }
 .header-center {
 	grid-column: 2/-1;
@@ -131,6 +137,7 @@ body {
 	display: inline;
 	justify-self: end;
 	margin-right: 3vw;
+	font-size: 1.5em;
 }
 .header-right {
 	margin: 3vw 2vw 0 0;
@@ -261,15 +268,17 @@ body {
 }
 
 .article-h1 {
-	font-size: 2.5rem;
+	font-size: 1.5em;
 	display: block;
 }
 .article-a {
 	display: block;
 	margin-top: 20px;
 	color: white;
+	font-size: 1em;
 }
 .article-p {
+	font-size: 1em;
 	color: #7e7f8a;
 }
 
