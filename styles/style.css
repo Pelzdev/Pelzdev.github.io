@@ -113,7 +113,7 @@ body {
 	grid-row-start: 1;
 	display: inline;
 	justify-self: end;
-	margin-right: 3vw
+	margin-right: 3vw;
 }
 .header-right {
 	margin: 3vw 2vw 0 0;
