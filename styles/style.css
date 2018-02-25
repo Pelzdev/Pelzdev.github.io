@@ -27,6 +27,23 @@ body {
 	}
 }
 
+@media (min-width: 1600px) {
+	.article1-text, .article2-text {
+		padding: 20% 20% 0 10%;
+	}
+	.article-h1 {
+		font-size: 2.5em !important;
+	}
+	.article-p {
+		font-size: 1.25em !important;
+		line-height: 1.25em;
+	}
+	.article-a {
+		font-size: 1.25em !important;
+		line-height: 1.25em;
+	}
+}
+
 .container {
 	display: grid;
 	grid-gap: 20px;
@@ -56,7 +73,7 @@ body {
 }
 .slide-nav-image {
 	position: absolute;
-	left: calc(30vw - 30px);
+	left: calc(30vw - 40px);
 	top: 12vw;
 	justify-self: center;
 }
