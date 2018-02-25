@@ -1,12 +1,25 @@
 let productsObj = {};
 const productsDiv = document.querySelector('.products');
 let productsArray = [];
-let productsToShow = 6;
+let productsToShow = 0;
+let productsToShowDefault = 0;
+
 const sliderImages = ['slide1', 'slide2', 'slide3'];
 const sliderNavImages = ['slide_nav1', 'slide_nav2', 'slide_nav3'];
 let sliderIndex = 0;
 
 $(function(){
+	if ($(window).width() >= 1720 && $(window).width() < 2150) {
+		productsToShow = 8;
+		productsToShowDefault = 8;
+	} else if ($(window).width() >= 2150) {
+		productsToShow = 10;
+		productsToShowDefault = 10;
+	} else {
+		productsToShow = 6;
+		productsToShowDefault = 6;
+	}
+
 	fetch('https://webshop.wm3.se/api/v1/shop/products.json?media_file=true')
 	.then(response => response.json())
 	.then(data => {
@@ -45,7 +58,7 @@ function showProducts (list) {
 	let index = 0;
 	productsDiv.innerHTML = '';
 	list.forEach(function(product) {
-		if (index < productsToShow) {
+		if (index < productsToShowDefault) {
 			productsDiv.innerHTML += `
 				<div class="product product${index}">
 					<img src="${product.media_file.url}">
@@ -72,7 +85,7 @@ function searchProducts() {
 		productsToShow = matches.length;
 		showProducts(matches);
 	} else if (input === '') {
-		productsToShow = 6;
+		productsToShow = productsToShowDefault;
 		showProducts(productsArray);
 	} 
 };
