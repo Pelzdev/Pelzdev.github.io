@@ -34,9 +34,9 @@ $(function(){
 		});
 
 		if (sliderIndex !== 0) {
-			$('.header-center > button').fadeOut(500);
+			$('.header-center > button').css('visibility', 'hidden');
 		} else {
-			$('.header-center > button').fadeIn(500);
+			$('.header-center > button').css('visibility', 'visible');
 		}
  }, 5000);
 });
