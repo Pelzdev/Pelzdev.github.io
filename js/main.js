@@ -27,6 +27,12 @@ $(function(){
 		showProducts(productsArray);
 	});
 
+	$('.article1-wrapper').on('click', function(){
+		window.location = "http://www.sportshoes.html/article1/";    
+	});
+	$('.article2-wrapper').on('click', function(){
+		window.location = "http://www.sportshoes.html/article2/";    
+	});
 	$('.search-input').val('');
 	$('.fa-search').on('click', searchProducts);
 	$('.search-input').on('keyup', searchProducts);
