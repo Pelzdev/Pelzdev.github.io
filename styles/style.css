@@ -226,8 +226,9 @@ body {
 	width: 100%;
 }
 
-.wrapper-1 {
-  display: grid;
+.article1-wrapper {
+	display: grid;
+	cursor: pointer;
 }
 
 .article1-text {
@@ -247,7 +248,8 @@ body {
 	background-repeat: no-repeat;
 }
 
-.wrapper-2 {
+.article2-wrapper {
+	cursor: pointer;
   display: grid;
 }
 
